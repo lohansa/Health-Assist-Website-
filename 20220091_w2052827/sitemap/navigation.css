@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    width:100%;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+    
+}
+
+/* CSS for navigation */
+
+nav {
+    font-size: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+nav a.active {
+    color: #eae3e3;
+    padding: 15px;
+    background-color: rgb(89, 89, 88);
+    color: #a0a0a0;
+}
+
+.navigation{
+    cursor: pointer;
+}
+
+.navigation:hover{
+    padding:6px;
+    color: white;
+    transition: 0.4s;
+}
+
+/* Tab hovering */
+#homeTab:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #ffffff;
+    color: black;
+    transition: 0.4s ease-out;
+}
+#aboutUsTab:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #ffffff;
+    color: black;
+    transition: 0.4s ease-out;
+}
+#shopTab:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #ffffff;
+    color: black;
+    transition: 0.4s ease-out;
+}
+#userProfileTab:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #ffffff;
+    color: black;
+    transition: 0.4s ease-out;
+}
+#galleryTab:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #ffffff;
+    color: black;
+    transition: 0.4s ease-out;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}

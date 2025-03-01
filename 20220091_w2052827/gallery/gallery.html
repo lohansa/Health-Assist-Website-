@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../exstyle.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="homepageheaderfooter.css">
+    <script scr="navigation.js"></script>  
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+    
+</head>
+<body>
+
+    <header>
+ 
+        <div class = "nav container">
+            <div class="icon">
+                <img src="images/logo.png">
+            </div>
+            <a href="#" class="logo">HEALTHY DAY<i class='bx bx-leaf' ></i> </a>
+    
+            <nav>
+                <ul class="navigation">
+                    <li><a id="homeTab" href="" target="_blank">Home</a></li>
+                    <li><a id="aboutUsTab" href="" target="_blank">About Us</a></li>
+                    <li><a id="shopTab" href="" target="_blank">Shop</a></li>
+                    <li><a id="userProfileTab" href="" target="_blank">User Profile</a></li>
+                    <li><a id="galleryTab" href="" target="_blank">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dropbox" id="box">
+        <div class="palletbox">
+        <div class="pallet" id="pallet1" onclick="white()"></div><!--Backgroung colour change-->
+        <div class="pallet" id="pallet2" onclick="black()"></div>
+        <div class="pallet" id="pallet3" onclick="blue()"></div>
+        <div class="pallet" id="pallet4" onclick="randomcol()"></div>
+    </div>
+    <div class="textsizebox">
+        <span class="material-symbols-outlined" id="text1" onclick="font(25)"><!--change font size-->
+            text_fields
+        </span>
+        <span class="material-symbols-outlined" id="text2" onclick="font(20)">
+            text_fields
+        </span>
+        <span class="material-symbols-outlined" id="text3" onclick="font(15)">
+            text_fields
+        </span>
+    </div>
+        <span class="material-symbols-outlined" id="expandup" onclick="goup()">
+        expand_less
+    </span></div>
+    <section class="gallery" id="backg">
+        <div class="images">
+            <div class="foot">HEALTHY DAY</div>
+            <div class="imgbox">
+            <div class="images" id="img1"><img src="images/gal1.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img2"><img src="images/gal2.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img3"><img src="images/gal3.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img4"><img src="images/gal4.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img5"><img src="images/gal5.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img6"><img src="images/gal6.jpg" style="width:110%" alt=""></div>
+            <div class="images" id="img7"><img src="images/gal7.jpg" style="width:110%" alt=""></div>
+            <div class="images" id="img8"><img src="images/gal8.jpg" style="width:110%" alt=""></div>
+            <div class="images" id="img9"><img src="images/gal9.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img10"><img src="images/gal10.jpg" style="width:110%" alt=""></div>
+            <div class="images" id="img11"><img src="images/gal11.jpg" style="width:110%" alt=""></div>
+            <div class="images" id="img12"><img src="images/gal12.jpg" style="width:110%" alt=""></div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <script>
+
+        let box = document.getElementById("box");
+        let bg = document.getElementById("backg");
+        let r = document.querySelector(':root');
+        
+        /*Dropdown function for dropdown box*/
+        function dropdown() {
+                box.style.top = "80px";
+            
+        }
+        /*function to dropdown box scroll up*/
+        function goup() {
+            box.style.top = "-110px";
+        }
+        //functions to change the colour of the background
+        function white() {
+            bg.style.backgroundColor = "white";
+        }
+
+        function black() {
+                bg.style.backgroundColor = "black";
+                
+            }
+
+        function blue() {
+                bg.style.backgroundColor = "#001233";
+            }
+
+        function randomcol() {
+                bg.style.backgroundColor ='rgb(' + Math.round(Math.random() * 255) +',' + Math.round(Math.random() * 255) +',' + Math.round(Math.random() * 255) + ')';
+            }
+
+        function font(size) {
+            switch (size) {
+                case 25:
+                    r.style.setProperty('--fontsize', '25px');
+                    break;
+                case 20:
+                    r.style.setProperty('--fontsize', '20px');
+                    break;
+                case 15:
+                    r.style.setProperty('--fontsize', '15px');
+                    break;    
+            
+                default:
+                    break;
+            }
+        }
+
+    </script>
+   <footer>
+    <div class="logosfooter">
+        <i class='bx bxl-facebook-circle' ></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-whatsapp' ></i>
+        <i class='bx bxl-twitter' ></i>
+    </div>
+    <p class="mains">&copy;<u> 2024 Healthy Day </u> <i class='bx bx-leaf' ></i> <br> <i>All Rights Reserved</i></p>
+    <div class="editor">
+        <a href="./20220091_w2052827/sitemap/images/Lohansa.png"> | Page Editor: LOHANSA</a>
+    </div>
+</footer>
+</body>
+</html>

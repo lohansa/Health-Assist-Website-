@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+	padding-top: 1.5em;
+}
+.box{
+    fill: #1ab539;;
+    stroke: #033f11; 
+    stroke-width:6;
+    cursor: pointer;
+}
+.box:hover{
+	fill: rgb(10, 186, 48);
+}
+.text{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 19px;
+}
+.line{
+    stroke:black;
+    stroke-width: 7;
+}
+.circle{
+	stroke: rgb(104, 230, 125);
+	stroke-width:4;
+}
+.circle:hover{
+	fill: rgb(104, 230, 125);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+.mains{
+    margin-left: 20px;
+}
+
+.editor{
+    text-align: right;
+}    
+
+.editor a{
+    color: #fff;
+}
+.editor a:hover{
+    color: #1ab539;
+}
